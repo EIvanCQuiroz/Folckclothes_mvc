@@ -15,13 +15,6 @@
         </div>
     </div>
 
-    <div>
-        <footer class="pie-pagina">Todos los derechos reservados a 
-                <a href="#">Edgar Ivan Quiroz Calderon</a>
-                <a href="#">Hector Aaron Jaimez Laureles</a>
-        </footer>
-    </div>
-
     <?php
      echo $script ?? '';
     ?>
