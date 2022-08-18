@@ -1,6 +1,6 @@
 src/
 vendor/
-node.modules/
+node_modules/
 gulpfile.js
 package.json
 package-lock.json

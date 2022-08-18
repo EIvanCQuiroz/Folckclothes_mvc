@@ -7,7 +7,7 @@ $_ENV['DB_PASS'] ?? '',
 $_ENV['DB_BD'], 
 $_ENV['DB_PORT'], 
 );
-$db->set_charset("utf8");
+mysqli_set_charset($db, "utf8");
 
 if (!$db) {
     echo "Error: No se pudo conectar a MySQL.";
