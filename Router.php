@@ -27,15 +27,27 @@ class Router
         // $rutas_protegidas = ['/admin', '/propiedades/crear', '/propiedades/actualizar', '/propiedades/eliminar', '/vendedores/crear', '/vendedores/actualizar', '/vendedores/eliminar'];
 
         // $auth = $_SESSION['login'] ?? null;
+        $currentUrl = ($_SERVER['REQUEST_URI'] === '') ? '/' :  $_SERVER['REQUEST_URI'] ;
+$method = $_SERVER['REQUEST_METHOD'];
+    
+//dividimos la URL actual cada vez que exista un '?' eso indica que se están pasando variables por la url
+$splitURL = explode('?', $currentUrl);
+// debuguear($splitURL);
+ 
+if ($method === 'GET') {
+    $fn = $this->getRoutes[$splitURL[0]] ?? null; //$splitURL[0] contiene la URL sin variables 
+} else {
+  $fn = $this->postRoutes[$splitURL[0]] ?? null;
+}
 
-        $currentUrl = strtok($_SERVER["REQUEST_URI"], '?') ?? '/';
+        /*$currentUrl = strtok($_SERVER["REQUEST_URI"], '?') ?? '/';
         $method = $_SERVER['REQUEST_METHOD'];
 
         if ($method === 'GET') {
             $fn = $this->getRoutes[$currentUrl] ?? null;
         } else {
             $fn = $this->postRoutes[$currentUrl] ?? null;
-        }
+        }*/
 
 
         if ( $fn ) {
