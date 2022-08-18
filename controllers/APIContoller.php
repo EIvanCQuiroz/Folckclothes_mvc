@@ -1,6 +1,5 @@
 <?php 
 
-
 namespace Controllers;
 
 use Model\Pedido;
@@ -8,9 +7,10 @@ use Model\Producto;
 use Model\PedidoProducto;
 
 class APIController{
-    public static function index(){
+    public static function index() {
         $productos = Producto::all();
         echo json_encode($productos);
+        //debuguear($productos);
     }
 
     public function guardar()
@@ -51,9 +51,6 @@ class APIController{
             header ('Location:' . $_SERVER['HTTP_REFERER']);
             
         }
-    }
+    }   
 }
 
-
-
-?>

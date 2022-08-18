@@ -5,9 +5,10 @@ $_ENV['DB_HOST'],
 $_ENV['DB_USER'], 
 $_ENV['DB_PASS'] ?? '', 
 $_ENV['DB_BD'], 
-$_ENV['DB_PORT'], 
+$_ENV['DB_PORT']
 );
-mysqli_set_charset($db, "utf8");
+
+$db->set_charset("utf8");
 
 if (!$db) {
     echo "Error: No se pudo conectar a MySQL.";
@@ -16,4 +17,4 @@ if (!$db) {
     exit;
 }
 
-//echo "Conexion establecida";
+// echo "Conexion establecida";

@@ -27,11 +27,11 @@ class Email{
         $mail->Host = 'smtp.mailtrap.io';
         $mail->SMTPAuth = true;
         $mail->Port = 2525;
-        $mail->Username = '25187c80fcee9a';
-        $mail->Password = '0267f4219f1938';
+        $mail->Username = '9973641ed299f5';
+        $mail->Password = 'b61695cf945ad9';
 
-        $mail->setFrom('cuentas@folkclothes.com');
-        $mail->addAddress('cuentas@folkclothes.com', 'FolkClothes.com');
+        $mail->setFrom('cuentas@folkingc.com');
+        $mail->addAddress('cuentas@folkingc.com', 'Folkc.com');
         $mail->Subject = 'Confirma tu cuenta!';
 
 
@@ -61,11 +61,11 @@ class Email{
         $mail->Host = 'smtp.mailtrap.io';
         $mail->SMTPAuth = true;
         $mail->Port = 2525;
-        $mail->Username = '25187c80fcee9a';
-        $mail->Password = '0267f4219f1938';
+        $mail->Username = '9973641ed299f5';
+        $mail->Password = 'b61695cf945ad9';
 
-        $mail->setFrom('cuentas@folkclothes.com');
-        $mail->addAddress('cuentas@folkclothes.com', 'FolkClothes.com');
+        $mail->setFrom('cuentas@folkingc.com');
+        $mail->addAddress('cuentas@folkingc.com', 'Folkc.com');
         $mail->Subject = 'Reestablece tu password';
 
 

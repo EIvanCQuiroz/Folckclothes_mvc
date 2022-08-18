@@ -1,5 +1,9 @@
 <?php 
 
+// //error_reporting(-1);
+error_reporting(E_ALL);
+ini_set('display_errors', 'off');
+
 require_once __DIR__ . '/../includes/app.php';
 
 use Controllers\AdminController;

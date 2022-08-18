@@ -1,6 +1,7 @@
 src/
 vendor/
 node_modules/
+bdfk_mvc.sql
 gulpfile.js
 package.json
 package-lock.json
